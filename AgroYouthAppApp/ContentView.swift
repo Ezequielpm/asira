@@ -44,17 +44,17 @@ struct ContentView: View {
                         }
 
                     // Pestaña 5: Marketplace (Placeholder por ahora)
-                    Text("Marketplace (Próximamente)")
-                        .tabItem {
-                            Label("Marketplace", systemImage: "storefront.fill")
-                        }
+                   // Text("Marketplace (Próximamente)")
+                    //    .tabItem {
+                    //        Label("Marketplace", systemImage: "storefront.fill")
+                    //    }
 
                     // Podrías considerar si "Mapa de Cultivos" sigue siendo una pestaña separada
                     // o se integra en otro lado. Por ahora, la mantenemos si así estaba.
-                    Text("Mapa de Cultivos (Próximamente)")
-                        .tabItem {
-                            Label("Mapa", systemImage: "map.fill")
-                        }
+                   // Text("Mapa de Cultivos (Próximamente)")
+                      //  .tabItem {
+                     //       Label("Mapa", systemImage: "map.fill")
+                      //  }
                 }
                 .environmentObject(terrenoManager)// Esto sigue siendo importante si otras vistas lo necesitan
     }
