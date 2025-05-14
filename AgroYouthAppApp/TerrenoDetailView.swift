@@ -24,13 +24,21 @@ struct TerrenoDetailView: View {
             if cultivoNormalizado.contains("maíz") || cultivoNormalizado.contains("maiz") {
                 return "maiz" // Asume que tienes una imagen llamada "maiz" en tus Assets
             } else if cultivoNormalizado.contains("tomate") || cultivoNormalizado.contains("jitomate") {
-                return "tomate" // Asume "tomate.jpg" o "tomate.png"
-            } else if cultivoNormalizado.contains("fresa") {
-                return "fresa" // Asume "fresa.jpg" o "fresa.png"
+                return "cultivo-jitomate" // Asume "tomate.jpg" o "tomate.png"
+            } else if cultivoNormalizado.contains("papa") {
+                return "cultivo-papa" // Asume "fresa.jpg" o "fresa.png"
+            }
+            else if cultivoNormalizado.contains("sandia")
+                        || cultivoNormalizado.contains("sandía")
+            {
+                return "cultivo-sandia" // Asume "fresa.jpg" o "fresa.png"
+            }
+            else if cultivoNormalizado.contains("lechuga") {
+                return "cultivo-lechuga" // Asume "fresa.jpg" o "fresa.png"
             }
             // ... añade más casos para otros cultivos ...
             
-            return "campo_default" // Imagen por defecto si no hay una específica
+            return "terreno-vacio" // Imagen por defecto si no hay una específica
         }
 
     var body: some View {
