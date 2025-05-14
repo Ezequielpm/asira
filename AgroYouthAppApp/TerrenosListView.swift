@@ -75,12 +75,12 @@ struct TerrenosListView: View {
     // (La función imageNameForCultivo debe estar aquí o ser accesible globalmente)
     private func imageNameForCultivo(_ tipoCultivo: String) -> String {
         let cultivoNormalizado = tipoCultivo.lowercased()
-        if cultivoNormalizado.contains("maíz") || cultivoNormalizado.contains("maiz") { return "terreno-vacio" }
-        if cultivoNormalizado.contains("tomate") || cultivoNormalizado.contains("jitomate") { return "terreno-vacio" }
-        if cultivoNormalizado.contains("papa") { return "terreno-vacio" }
-        if cultivoNormalizado.contains("fresa") { return "terreno-vacio" }
+        if cultivoNormalizado.contains("maíz") || cultivoNormalizado.contains("maiz") { return "maiz" }
+        if cultivoNormalizado.contains("tomate") || cultivoNormalizado.contains("jitomate") { return "cultivo-jitomate" }
+        if cultivoNormalizado.contains("papa") { return "cultivo-papa" }
+        if cultivoNormalizado.contains("sandia") || cultivoNormalizado.contains("sandía"){ return "cultivo-sandia" }
         // Añade aquí más mapeos si los necesitas para las imágenes que usa tu compañero
-        if cultivoNormalizado.contains("zanahoria") { return "terreno-vacio" } // Ejemplo
+        if cultivoNormalizado.contains("lechuga") { return "cultivo-lechuga" } // Ejemplo
         return "terreno-vacio"
     }
 
