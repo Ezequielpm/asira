@@ -29,13 +29,18 @@ struct FormularioView: View {
                     .ignoresSafeArea()
 
                 VStack(spacing: 0) {
-                    Spacer().frame(height: 120)
-                    Text("Tu primer cultivo \nya casi está listo!")
-                        .font(.largeTitle)
+                    Spacer().frame(height: 70)
+                    Text("Ingresa los datos\nde tu terreno aquí")
+                        .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 24)
+                    
+                    Image("terreno-vacio")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .scaledToFit()
                     Spacer()
 
                     VStack(spacing: 16) {
